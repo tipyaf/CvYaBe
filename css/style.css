@@ -25,9 +25,9 @@
 body {
   max-width: 100%;
   max-height: 100vh;
-  background-image: url('../images/macback.jpg');
+  /*background-image: url('../images/macback.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   background-color: black;
   background-attachment: fixed;
   color: white;
@@ -302,6 +302,30 @@ nav li{
   list-style-type: none;
 }
 
+/* ==========================================================================
+   Video background
+   ========================================================================== */
+
+   video {
+       position: fixed;
+       opacity: 0.2;
+       top: 50%;
+       left: 50%;
+       min-width: 100%;
+       min-height: 100%;
+       width: auto;
+       height: auto;
+       z-index: -150;
+       -webkit-transform: translateX(-50%) translateY(-50%);
+               transform: translateX(-50%) translateY(-50%);
+    background: url('../images/vidback.jpg') no-repeat;
+     background-size: cover;
+     -webkit-transition: 1s opacity;
+     transition: 1s opacity;
+   }
+   .stopfade {
+      opacity: .5;
+   }
 
 
    /* ==========================================================================

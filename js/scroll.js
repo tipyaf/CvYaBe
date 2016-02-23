@@ -5,8 +5,8 @@ body.onmousewheel = document.onmousewheel = wheel;
 
 function wheel(event) {
     var delta = 0;
-    if (event.wheelDelta) delta = event.wheelDelta / 110;
-    else if (event.detail) delta = -event.detail / 3;
+    if (event.wheelDelta) delta = event.wheelDelta / 130;
+    else if (event.detail) delta = -event.detail / 30;
 
     handle(delta);
     if (event.preventDefault) event.preventDefault();
@@ -23,6 +23,7 @@ function handle(delta) {
 }
 
 $(document).ready(function() {
+
   $('home .parallax-window').parallax({imageSrc: '../images/macback.jpg'});
   $('savoirs .parallax-window').parallax({imageSrc: '../images/knowback.jpg'});
   $('competences .parallax-window').parallax({imageSrc: '../images/bodyback.jpg'});
