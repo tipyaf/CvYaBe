@@ -24,8 +24,9 @@ function handle(delta) {
 
 $(document).ready(function() {
 
-  $('home .parallax-window').parallax({imageSrc: '../images/macback.jpg'});
-  $('savoirs .parallax-window').parallax({imageSrc: '../images/knowback.jpg'});
-  $('competences .parallax-window').parallax({imageSrc: '../images/bodyback.jpg'});
+  $('.home .parallax-window').parallax({imageSrc: '../images/macback.jpg'});
+  $('.savoirs .parallax-window').parallax({imageSrc: '../images/knowback.jpg'});
+  $('.competences .parallax-window').parallax({imageSrc: '../images/bodyback.jpg'});
   $('savoir-etre .parallax-window').parallax({imageSrc: '../images/myback.jpg'});
+  // $('.article').parallax({imageSrc: '../images/homeback.jpg'});
 });
