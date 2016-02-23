@@ -1,0 +1,314 @@
+/* ==========================================================================
+                                    GENERAL
+   ========================================================================== */
+
+
+/*
+     webfont
+     ========================================================================== */
+     @import url('http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300,400,500,700');
+
+     @font-face {
+     font-family: 'elevate';
+     src: url('../font/elevate/elevate.eot');
+     src: url('../font/elevate/elevate.eot?#iefix') format('embedded-opentype'),
+          url('../font/elevate/elevate.woff') format('woff'),
+          url('../font/elevate/elevate.ttf') format('truetype'),
+          url('../font/elevate/elevate.svg#plexifont_bvregular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+   }
+/*
+
+   ========================================================================== */
+
+body {
+  max-width: 100%;
+  max-height: 100vh;
+  background-image: url('../images/macback.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+section {
+  height: 100vh;
+}
+h1 {
+  text-transform: capitalize;
+  /*font*/
+ font-family: 'Open Sans', sans-serif;
+  font-size: 5em;
+  /*color: #439CE3;*/
+  color:white;
+  /*margin-top: -30px;*/
+
+
+}
+
+.colorize {
+  color:#439CE3;
+  font-family: 'elevate';
+
+}
+h2{
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+footer{
+  background-color:#439CE3;
+}
+hr{
+  padding: 0;
+
+  margin: 0;
+}
+
+
+/*
+   general--->sections
+   ========================================================================== */
+
+   .home {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     /*padding-top: 40px;*/
+     /*padding-bottom: 40px;*/
+     text-align: center;
+   }
+
+   .savoirs, .competences, .savoir-etre, .contacts {
+     /*width: 100vw;*/
+     /*padding-top: 100px;*/
+   }
+   /*.savoirs {
+     background-image: url('../images/knowback.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+   }
+
+   .competences {
+     background-image: url('../images/bodyback.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+   }
+
+   .savoir-etre {
+     background-image: url('../images/myback.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+   }*/
+   .contacts {
+    background-color: #439CE3;
+
+   }
+
+   .parallax-window {
+       min-height: 400px;
+       background: transparent;
+   }
+/*
+
+/* ==========================================================================
+                                    Sections
+   ========================================================================== */
+
+  /* home
+   ========================================================================== */
+
+
+.name {
+  /*width: 100%;
+  height: 100vh;*/
+  background-color: rgba(4, 4, 4, 0.45);
+  background-attachment: fixed;
+  /*-webkit-box-shadow: 1px 0px 257px 25px rgba(199,197,199,1);
+  -moz-box-shadow: 1px 0px 257px 25px rgba(199,197,199,1);
+  box-shadow: 1px 0px 257px 25px rgba(199,197,199,1);*/
+  /*margin: 0;
+  padding-bottom: 10px;*/
+}
+
+/*
+   savoirs
+   ========================================================================== */
+
+
+
+/*
+   competences
+   ========================================================================== */
+
+
+
+/*
+   savoir-etre
+   ========================================================================== */
+
+
+
+
+
+
+  /*
+     contacts
+     ========================================================================== */
+
+
+
+
+/* ==========================================================================
+                                     MENU
+   ========================================================================== */
+   @import url(http://fonts.googleapis.com/css?family=Quicksand);
+   /*html {
+     height: 100%;
+   }
+
+   body {
+     height: 100%;
+     background-color: #369;
+   }*/
+
+   .menu-collapsed {
+     transition: all .25s;
+     position: fixed;
+     top: 10px;
+     left: 9px;
+     height: 36px;
+     width: 36px;
+     z-index: 1;
+     cursor: pointer;
+   }
+   .menu-collapsed ul {
+     transition: all .05s;
+     position: fixed;
+     left: -9000px;
+   }
+
+   .bar {
+     position: fixed;
+     left: 12px;
+     top: 24px;
+     height: 6px;
+     width: 30px;
+     border-radius: 15px;
+     background-color: rgba(255, 255, 255, 0.75);
+   }
+   .bar:before {
+     transition: all .25s;
+     content: "";
+     position: absolute;
+     left: 0;
+     top: -8px;
+     height: 6px;
+     width: 30px;
+     border-radius: 15px;
+     background-color: rgba(255, 255, 255, 0.75);
+   }
+   .bar:after {
+     transition: all .25s;
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 8px;
+     height: 6px;
+     width: 30px;
+     border-radius: 15px;
+     background-color: rgba(255, 255, 255, 0.75);
+   }
+
+   .menu-expanded {
+     transition: all .25s;
+     text-align: center;
+     line-height: 50px;
+     width: 100%;
+     height: 100%;
+     border-radius: 0px;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.85);
+     background-image: url('../images/myback.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+
+   }
+   .menu-expanded ul {
+     transition: all .05s;
+     position: relative;
+     left: 0;
+     z-index: 2;
+     margin-top: 5%;
+
+   }
+   .menu-expanded a {
+     transition: all .15s;
+     text-decoration: none;
+     color: white;
+     font-size: 2em;
+     font-family: 'Raleway', sans-serif;
+     padding: 5px;
+
+   }
+   .menu-expanded a:hover {
+     transition: all .15s;
+     letter-spacing: 2px;
+     border: 1px solid rgba(255, 255, 255, 0.15);
+     color: #439CE3;
+     font-weight: bold;
+     border-radius: 20px;
+     padding: 10px;
+   }
+   .menu-expanded .bar {
+     background-color: transparent;
+     transition: all .25s;
+   }
+   .menu-expanded .bar:before {
+     transition: all .25s;
+     content: "";
+     transform: rotate(45deg);
+     top: -0px;
+   }
+   .menu-expanded .bar:after {
+     transition: all .25s;
+     content: "";
+     transform: rotate(-45deg);
+     top: 0px;
+   }
+
+   /*h1 {
+     font-size: 3em;
+     color: white;
+     font-family: 'Quicksand', sans-serif;
+     text-align: center;
+     line-height: 250px;
+   }
+
+   p {
+     width: 80%;
+     margin: 0 auto;
+     color: white;
+     line-height: 20px;
+     font-family: 'Quicksand', sans-serif;
+   }*/
+nav li{
+  color: white;
+  list-style-type: none;
+}
+
+
+
+   /* ==========================================================================
+      medias query
+      ========================================================================== */
+      /*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      h1{
+        font-size: 3em;
+      }
+      }*/
