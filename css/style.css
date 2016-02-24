@@ -68,6 +68,7 @@ hr{
 }
 
 
+
 /*
    general--->sections
    ========================================================================== */
@@ -79,27 +80,27 @@ hr{
      /*padding-top: 40px;*/
      /*padding-bottom: 40px;*/
      text-align: center;
+     /*background-color: red;*/
    }
 
    .savoirs, .competences, .savoir-etre, .contacts {
-     /*width: 100vw;*/
-     /*padding-top: 100px;*/
+
    }
-   /*.savoirs {
-     background-image: url('../images/knowback.jpg');
+   .savoirs {
+     background-image: url('../images/myopback.png');
      background-size: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
    }
 
-   .competences {
+   /*.competences {
      background-image: url('../images/bodyback.jpg');
      background-size: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
-   }
+   }*/
 
-   .savoir-etre {
+   /*.savoir-etre {
      background-image: url('../images/myback.jpg');
      background-size: cover;
      background-repeat: no-repeat;
@@ -151,7 +152,9 @@ hr{
    savoirs
    ========================================================================== */
 
+/*.savoirs {
 
+}*/
 
 /*
    competences

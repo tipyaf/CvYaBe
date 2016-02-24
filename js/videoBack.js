@@ -29,9 +29,6 @@ vid.volume = 0;
 // fadeout pausebutton
 
 $(document).ready(function(){
-
-
-
 	// fade in #pausebutton
 	$(function () {
 		$(window).scroll(function () {
