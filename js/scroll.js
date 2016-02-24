@@ -6,7 +6,7 @@ body.onmousewheel = document.onmousewheel = wheel;
 function wheel(event) {
     var delta = 0;
     if (event.wheelDelta) delta = event.wheelDelta / 110;
-    else if (event.detail) delta = -event.detail / 110;
+    else if (event.detail) delta = -event.detail / 30;
 
     handle(delta);
     if (event.preventDefault) event.preventDefault();
@@ -14,8 +14,8 @@ function wheel(event) {
 }
 
 function handle(delta) {
-    var time = 500;
-	var distance = 400;
+    var time = 200;
+	var distance = 600;
 
     $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - (distance * delta)

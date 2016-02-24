@@ -18,6 +18,18 @@
      font-weight: normal;
      font-style: normal;
    }
+   @font-face {
+       font-family: 'master_of_breakregular';
+       src: url('../font/master_of_break/master_of_break-webfont.eot');
+       src: url('../font/master_of_break/master_of_break-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../font/master_of_break/master_of_break-webfont.woff2') format('woff2'),
+            url('../font/master_of_break/master_of_break-webfont.woff') format('woff'),
+            url('../font/master_of_break/master_of_break-webfont.ttf') format('truetype'),
+            url('../font/master_of_break/master_of_break-webfont.svg#master_of_breakregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+
+   }
 /*
 
    ========================================================================== */
@@ -37,21 +49,15 @@ section {
   height: 100vh;
 }
 h1 {
-  text-transform: capitalize;
-  /*font*/
- font-family: 'Open Sans', sans-serif;
+  /* text-transform: capitalize; */
+ font-family: 'master_of_breakregular', sans-serif;
   font-size: 5em;
-  /*color: #439CE3;*/
-  color:white;
-  /*margin-top: -30px;*/
-
 
 }
 
+
 .colorize {
   color:#439CE3;
-  font-family: 'elevate';
-
 }
 h2{
   text-transform: uppercase;
@@ -63,9 +69,13 @@ footer{
 }
 hr{
   padding: 0;
-
   margin: 0;
 }
+
+h3{
+  color: #302d2d;
+}
+
 
 
 
@@ -83,17 +93,19 @@ hr{
      /*background-color: red;*/
    }
 
-   .savoirs, .competences, .savoir-etre, .contacts {
+   .savoirs, .parcours, .savoir-etre, .contacts {
 
    }
    .savoirs {
-     background-image: url('../images/myopback.png');
+     background-image: url('../images/partback.jpg');
      background-size: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
+     text-align: center;
    }
 
-   /*.competences {
+
+   /*.parcours {
      background-image: url('../images/bodyback.jpg');
      background-size: cover;
      background-repeat: no-repeat;
@@ -127,18 +139,22 @@ hr{
   display: flex;
   width: 70%;
 }*/
+.yannick{
+  width: 66%;
+  margin-top: 6%;
+}
 
-.name h2 {
-  /*width: 100%;
-  height: 100vh;*/
+/* .name h2 {
+  width: 100%;
+  height: 100vh;
   background-color: rgba(4, 4, 4, 0.45);
   background-attachment: fixed;
-  /*-webkit-box-shadow: 1px 0px 257px 25px rgba(199,197,199,1);
+  -webkit-box-shadow: 1px 0px 257px 25px rgba(199,197,199,1);
   -moz-box-shadow: 1px 0px 257px 25px rgba(199,197,199,1);
-  box-shadow: 1px 0px 257px 25px rgba(199,197,199,1);*/
-  /*margin: 0;
-  padding-bottom: 10px;*/
-}
+  box-shadow: 1px 0px 257px 25px rgba(199,197,199,1);
+  margin: 0;
+  padding-bottom: 10px;
+} */
 /*.name {
   justify-content: space-around;
 }*/
@@ -157,10 +173,23 @@ hr{
 }*/
 
 /*
-   competences
+   parcours
    ========================================================================== */
-
-
+blockquote{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #439CE3;
+  font-size: 0.5em;
+  margin-top: 5%;
+}
+blockquote i{
+  /* margin: 3%; */
+}
+blockquote p{
+  text-align: right;
+  font-size: 3em;
+}
 
 /*
    savoir-etre
