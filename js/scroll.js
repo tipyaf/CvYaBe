@@ -14,15 +14,43 @@ function wheel(event) {
 }
 
 function handle(delta) {
-    var time = 0;
-	var distance = 0;
+    var time = 100;
+	var distance = 500;
 
     $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - (distance * delta)
     }, time );
 }
 
-
+// function downScroll() {
+//     window.scrollBy(0, 750);
+//
+// }
+$(".tosavoirs").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#savoirs").offset().top},
+        'slow');
+});
+$(".toblockquote").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#blockquote").offset().top},
+        'slow');
+});
+$(".toparcours").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#parcours").offset().top},
+        'slow');
+});
+$(".toetre").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#savoir-etre").offset().top},
+        'slow');
+});
+$(".tocontacts").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#contacts").offset().top},
+        'slow');
+});
 
 $(document).ready(function() {
 

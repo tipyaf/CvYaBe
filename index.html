@@ -1,122 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV paralaxe</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV paralaxe</title>
 
-  <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel='stylesheet' type='text/css'>
-  <!-- Bootstrap -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
 
-<body>
+  <body>
 
-  <div id="home" class="home">
-    <video autoplay id="bgvid" loop>
-      <source src=".webm" type="video/webm">
-      <source src="video/videv.mp4" type="video/mp4">
-    </video>
-    <div class="name animated fadeInRight">
-  <!-- <h1 class="yannick animated fadeInUp">Ya
+    <div id="home" class="home">
+      <video autoplay id="bgvid" loop>
+        <source src=".webm" type="video/webm">
+        <source src="video/videv.mp4" type="video/mp4">
+      </video>
+      <div class="name animated fadeInRight">
+        <!-- <h1 class="yannick animated fadeInUp">Ya
     <span class="colorize">n</span>nick Be
     <span class="colorize">n</span>chi
     <span class="colorize">m</span>ol</h1> -->
-    <img class="yannick animated fadeInUp0" src="images/YannickBenchimol.png" alt="logo" />
-    <h2 class="animated fadeInRight colorize">développeur web</h2>
+        <img class="yannick animated fadeInUp0" src="images/YannickBenchimol.png" alt="logo"/>
+        <h2 class="animated fadeInRight colorize">développeur web</h2>
+      </div>
+      <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
+      <button id="vidButton" class="vidbtn" type="button" name="vidbutton">cv vidéo</button>
+      <!--   <iframe class="cvVideo animated fadeInDown" width="40%" height="40%" src="https://www.youtube.com/embed/k4yyYOvD3hI" frameborder="0" allowfullscreen></iframe> -->
+      <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
     </div>
-    <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
-    <button id="vidButton" class="vidbtn" type="button" name="vidbutton">cv vidéo</button>
-  <!--   <iframe class="cvVideo animated fadeInDown" width="40%" height="40%" src="https://www.youtube.com/embed/k4yyYOvD3hI" frameborder="0" allowfullscreen></iframe> -->
+    <section id="savoirs" class="savoirs parallax-window" data-parallax="scroll" data-image-src="images/myback.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="scrollMenu">
+      <i class="fa fa-angle-double-down fa-3x down toblockquote"></i>
+      </div>
+    </section>
+
+    <section id="blockquote" class="blockquote">
+      <blockquote>
+        <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
+        <cite>
+          Ils ne savaient pas que c’était impossible, alors ils l’ont fait.
+        </cite>
+        <i class="fa fa-quote-right fa-3x fa-pull-right fa-border"></i>
+        <p>
+          mark twain
+        </p>
+      </blockquote>
+      <i class="fa fa-angle-double-down fa-3x down toparcours"></i>
+      </section>
+
+    <section id="parcours" class="parcours parallax-window" data-parallax="scroll" data-image-src="images/bodyback.jpg">
+      <i class="down fa fa-angle-double-down fa-3x toetre"></i>
+    </section>
 
 
-  </div>
-  <section id="savoirs" class="savoirs parallax-window" data-parallax="scroll" data-image-src="images/knowback.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-  </section>
+      <section id="savoir-etre" class="savoir-etre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
 
-  <section id="parcours" class="parcours parallax-window" data-parallax="scroll" data-image-src="images/bodyback.jpg">
+      <i class="fa fa-angle-double-down fa-3x down tocontacts"></i>
 
+    <section id="contacts" class="contacts">
 
+      jhjhjhjhjhjhjjjh
 
-<blockquote>
-  <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
-  <cite>
-    Ils ne savaient pas que c’était impossible, alors ils l’ont fait.
-  </cite>
-<i class="fa fa-quote-right fa-3x fa-pull-right fa-border"></i>
-<p>
-  mark twain
-</p>
-</blockquote>
-  </section>
+    </section>
 
+    <footer>
+      <hr>
+      footer
+    </footer>
+    <!-- menu -->
+    <div class="menu-collapsed">
+      <div class="bar"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Acceuil</a>
+          </li>
+          <li>
+            <a href="#savoirs">Savoirs</a>
+          </li>
+          <li>
+            <a href="#parcours">Parcours</a>
+          </li>
+          <li>
+            <a href="#savoir-etre">Savoir-être</a>
+          </li>
+          <li>
+            <a href="#contacts">Me contacter</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-  <section id="savoir-etre" class="savoir-etre parallax-window" data-parallax="scroll" data-image-src="images/myback.jpg">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <script type="text/javascript">
+      $(document).ready(function() {
 
-  </section>
-
-  <section id="contacts" class="contacts">
-
-jhjhjhjhjhjhjjjh
-
-  </section>
-
-  <footer>
-    <hr> footer
-  </footer>
-  <!-- menu -->
-  <div class="menu-collapsed">
-    <div class="bar"></div>
-    <nav>
-      <ul>
-        <li>
-          <a href="#home">Acceuil</a>
-        </li>
-        <li>
-          <a href="#savoirs">Savoirs</a>
-        </li>
-        <li>
-          <a href="#parcours">Parcours</a>
-        </li>
-        <li>
-          <a href="#savoir-etre">Savoir-être</a>
-        </li>
-        <li>
-          <a href="#contacts">Me contacter</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-
-      $(".menu-collapsed").click(function() {
-        $(this).toggleClass("menu-expanded");
+        $(".menu-collapsed").click(function() {
+          $(this).toggleClass("menu-expanded");
+        });
       });
-    });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/scroll.js" charset="utf-8"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/videoBack.js" charset="utf-8"></script>
-</body>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/scroll.js" charset="utf-8"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/videoBack.js" charset="utf-8"></script>
+  </body>
 
 </html>
