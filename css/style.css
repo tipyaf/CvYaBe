@@ -94,7 +94,7 @@ h3{
    }
 
    .savoirs, .parcours, .savoir-etre, .contacts {
-
+  padding-top: 40px;
    }
    .savoirs {
      background-image: url('../images/partback.jpg');
@@ -105,12 +105,12 @@ h3{
    }
 
 
-   /*.parcours {
+   .parcours {
      background-image: url('../images/bodyback.jpg');
      background-size: cover;
      background-repeat: no-repeat;
      background-attachment: fixed;
-   }*/
+   }
 
    /*.savoir-etre {
      background-image: url('../images/myback.jpg');
@@ -163,7 +163,27 @@ h3{
   border-radius: 2%;
   margin-top: 2%;
 }
+.vidbtn {
+    -webkit-border-radius: 21;
+    -moz-border-radius: 21;
+    border-radius: 21px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+  }
 
+.vidbtn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
 /*
    savoirs
    ========================================================================== */
@@ -175,16 +195,26 @@ h3{
 /*
    parcours
    ========================================================================== */
+
 blockquote{
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: #439CE3;
   font-size: 0.5em;
-  margin-top: 5%;
+  margin-top: 0;
 }
-blockquote i{
+blockquote .fa{
   /* margin: 3%; */
+  font-size: 6em;
+}
+blockquote cite{
+   font-family: 'master_of_breakregular', sans-serif;
+  font-size:  7em;
+
+
+
 }
 blockquote p{
   text-align: right;
@@ -389,6 +419,9 @@ nav li{
      background-color: white;
      color:#439CE3;
    }
+
+
+
 
 
    /* ==========================================================================
