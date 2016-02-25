@@ -33,14 +33,32 @@
     <span class="colorize">n</span>nick Be
     <span class="colorize">n</span>chi
     <span class="colorize">m</span>ol</h1> -->
+
         <img class="yannick animated fadeInUp0" src="images/YannickBenchimol.png" alt="logo"/>
+
         <h2 class="animated fadeInRight colorize">développeur web</h2>
+
       </div>
-      <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
-      <button id="vidButton" class="vidbtn" type="button" name="vidbutton">cv vidéo</button>
-      <!--   <iframe class="cvVideo animated fadeInDown" width="40%" height="40%" src="https://www.youtube.com/embed/k4yyYOvD3hI" frameborder="0" allowfullscreen></iframe> -->
-      <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
+        <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
+
+            <button id="vidButton" class="vidbtn" type="button" href="#animatedModal" name="vidbutton">cv vidéo</button>
+
+        <div id="animatedModal">
+          <div  id="btn-close-modal" class="close-animatedModal">
+                    <i class=" closeCv fa fa-times"></i>
+          </div>
+
+                    <div class="modal-content">
+                        <iframe id="cvVideo" class="cvVideo animated fadeInDown" src="https://www.youtube.com/embed/k4yyYOvD3hI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+
+        </div>
+
+            <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
     </div>
+
+
     <section id="savoirs" class="savoirs parallax-window" data-parallax="scroll" data-image-src="images/myback.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       <div class="scrollMenu">
       <i class="fa fa-angle-double-down fa-3x down toblockquote"></i>
@@ -118,6 +136,8 @@
     <script src="js/scroll.js" charset="utf-8"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/videoBack.js" charset="utf-8"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="js/cvVideo.js" charset="utf-8"></script>
   </body>
 
 </html>
