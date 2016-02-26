@@ -24,58 +24,48 @@
   <body>
 
     <div id="home" class="home">
+attention! pbs à regler ===> scoll down ne fonctionne pas après ouverture du modal<br>===> background ["#savoir-etre"] ne prend pas l'icone du scroll down
       <video autoplay id="bgvid" loop>
         <source src=".webm" type="video/webm">
         <source src="video/videv.mp4" type="video/mp4">
       </video>
+
       <div class="name animated fadeInRight">
-        <!-- <h1 class="yannick animated fadeInUp">Ya
-    <span class="colorize">n</span>nick Be
-    <span class="colorize">n</span>chi
-    <span class="colorize">m</span>ol</h1> -->
-
         <img class="yannick animated fadeInUp0" src="images/YannickBenchimol.png" alt="logo"/>
-
         <h2 class="animated fadeInRight colorize">développeur web</h2>
-
       </div>
+
         <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
+        <button id="vidButton" class="vidbtn" type="button" href="#animatedModal" name="vidbutton">cv vidéo</button>
 
-            <button id="vidButton" class="vidbtn" type="button" href="#animatedModal" name="vidbutton">cv vidéo</button>
-
-        <div id="animatedModal">
+      <div id="animatedModal">
           <div  id="btn-close-modal" class="close-animatedModal">
-                    <i class=" closeCv fa fa-times"></i>
+            <i class="closeCv fa fa-times"></i>
           </div>
+          <div class="modal-content">
+            <!--Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen! -->
+            <iframe id="cvVideo" class="cvVideo animated fadeInDown" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe>
+          </div>
+      </div>
 
-                    <div class="modal-content">
-                        <iframe id="cvVideo" class="cvVideo animated fadeInDown" src="https://www.youtube.com/embed/k4yyYOvD3hI" frameborder="0" allowfullscreen></iframe>
-                    </div>
-
-
-        </div>
-
-            <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
+      <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
     </div>
 
 
     <section id="savoirs" class="savoirs parallax-window" data-parallax="scroll" data-image-src="images/myback.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       <div class="scrollMenu">
-      <i class="fa fa-angle-double-down fa-3x down toblockquote"></i>
+        <i class="fa fa-angle-double-down fa-3x down toblockquote"></i>
       </div>
     </section>
 
     <section id="blockquote" class="blockquote">
       <blockquote>
         <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
-        <cite>
-          Ils ne savaient pas que c’était impossible, alors ils l’ont fait.
-        </cite>
+        <cite>Ils ne savaient pas que c’était impossible, alors ils l’ont fait.</cite>
         <i class="fa fa-quote-right fa-3x fa-pull-right fa-border"></i>
-        <p>
-          mark twain
-        </p>
+          <p>mark twain</p>
       </blockquote>
+
       <i class="fa fa-angle-double-down fa-3x down toparcours"></i>
       </section>
 
@@ -85,7 +75,8 @@
 
 
 
-      <section id="savoir-etre" class="savoir-etre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+      <section id="savoir-etre" class="savoir-etre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt moll
+      </section>
 
       <i class="fa fa-angle-double-down fa-3x down tocontacts"></i>
 
