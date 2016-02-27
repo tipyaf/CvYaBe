@@ -36,17 +36,18 @@ attention! pbs à regler <br>=====================<br>===> scroll down ne foncti
       </div>
 
         <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
-        <button id="vidButton" class="vidbtn" type="button" href="#animatedModal" name="vidbutton">cv vidéo</button>
+        <button id="vidButton" class="vidbtn" type="button" href="#animatedModal" name="vidbutton">Découvrir le Cv vidéo</button>
 
-      <div id="animatedModal">
-          <div  id="btn-close-modal" class="close-animatedModal">
-            <i class="closeCv fa fa-times"></i>
-          </div>
-          <div class="modal-content">
-            <!--Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen! -->
-            <iframe id="cvVideo" class="cvVideo animated fadeInDown" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe>
-          </div>
-      </div>
+    <div id="animatedModal">
+        <div  id="btn-close-modal" class="close-animatedModal">
+          <i class="closeCv fa fa-times"></i>
+        </div>
+        <div class="modal-content">
+<!--            Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen!
+-->          <iframe id="cvVideo" class="cvVideo animated fadeInDown tosavoirs" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe>
+        </div>
+    </div>
+
 
       <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
     </div>
@@ -122,13 +123,14 @@ attention! pbs à regler <br>=====================<br>===> scroll down ne foncti
         });
       });
     </script>
+    <script src="js/scroll.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/scroll.js" charset="utf-8"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/videoBack.js" charset="utf-8"></script>
-    <script src="js/animatedModal.min.js"></script>
+    <script src="js/animatedModal.js"></script>
     <script src="js/cvVideo.js" charset="utf-8"></script>
+
   </body>
 
 </html>

@@ -1,15 +1,16 @@
 $(document).ready(function() {
 
-  $("#vidButton").animatedModal({
+  $("#vidButton").animatedModal(
+    {
     animatedIn:'slideInLeft',
     animatedOut:'fadeOutLeft',
     color:'#000000'
-  });
+  }
+);
 
 });
 
-// stop lecture youtube à la fermeture du modal
-$('.closeCv').on('click', function() {
+ $('.closeCv').on('click', function() {
 
     $("#cvVideo")[0].src += "?autoplay=0";
         ev.preventDefault();
