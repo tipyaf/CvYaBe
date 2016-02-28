@@ -36,12 +36,16 @@
           <span class="capitalize">y</span>a<span class="colorize">n</span>nick
           <span class="capitalize"> b</span>e<span class="colorize">n</span>chi<span class="colorize">m</span>ol
         </h1>
+
         <h2 class="colorize">développeur web</h2>
+        <span id="hide"></span>
+        <input id="userInput" type="text" name="name" oninput="userName()">
       </div>
 
       <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
 
-      <button id="vidButton" class="vidbtn" type="button" name="vidbutton">vidéo de présentation</button>
+      <button id="vidButton" class="vidbtn" type="button" name="vidbutton" data-toggle="modal" data-target="#myModal"><i class="fa fa-play"></i></button>
+
 
   <!--     <div id="animatedModal">
     <div id="btn-close-modal" class="close-animatedModal">
@@ -50,10 +54,27 @@
     <div class="modal-content"> -->
 <!--  </div>
      </div> -->
+     <div id="myModal" class="modal modal-fullscreen fade" role="dialog">
+       <div class="modal-dialog">
 
-     <!--            Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen!-->
-   <iframe id="cvVideo" class="cvVideo" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe>
-   <!-- <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i> -->
+         <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title">Modal Header</h4>
+           </div>
+           <div class="modal-body">
+             <!--            Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen!-->
+           <iframe id="cvVideo" class="cvVideo" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe>
+           <!-- <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i> -->
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+
+       </div>
+     </div>
 
 
 
