@@ -152,6 +152,9 @@ h3 {
 #userInput{
   text-align: center;
   width: 100%;
+  background-color: transparent;
+  outline: none;
+  border-color: #439CE3;
 }
 .vidbtn {
   background-color: transparent;

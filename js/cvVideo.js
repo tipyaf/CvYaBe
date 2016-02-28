@@ -24,13 +24,16 @@ var visitorName = visitorInput.value;
 
 function showTextPlay(){
   devText.innerHTML =" " + "Lire la vidéo de présentation";
+  visitorInput.style.display = "none";
 }
 function hideTextPlay(){
   devText.innerHTML ="Développeur web";
+  visitorInput.style.display = "none";
 }
 
 function showTextScroll(){
   devText.innerHTML ="Découvrir la page suivante";
+  visitorInput.style.display = "none";
 }
 function hideTextScroll(){
   devText.innerHTML ="Développeur web";
@@ -74,6 +77,7 @@ cvVidButton.addEventListener('mouseover', showTextPlay);
 scrolldown.addEventListener('mouseout', hideTextScroll);
 scrolldown.addEventListener('mouseover', showTextScroll);
 titleName.addEventListener('mouseover' , sayMe);
+// titleName.addEventListener('mouseout' , hideTextPlay);
 // visitorInput.addEventListener('input', UserName);
 // textePlay.innerHTML =" " + "Lire la vidéo de présentation";
 
