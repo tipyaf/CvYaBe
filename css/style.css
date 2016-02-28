@@ -60,9 +60,7 @@ h2 {
   font-size: 1rem;
 
 }
-footer {
-  background-color: #439CE3;
-}
+
 hr {
   padding: 0;
   margin: 0;
@@ -112,8 +110,8 @@ h3 {
   background-attachment: fixed;
 }
 .savoir-etre {
-  background-image: url('../images/myback.jpg');
-  background-size: cover;
+/*   background-image: url('../images/myback.jpg');
+ */  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -228,7 +226,7 @@ video {
   opacity: .5;
 }
 #pauseButton {
-  opacity: 0.8;
+  opacity: 0.5;
   border-radius: 50%;
   background-color: #439CE3;
   padding: 9px;
@@ -270,12 +268,12 @@ savoirs
   justify-content: space-around;
 }
 blockquote {
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: #439ce3;
-  font-size: 0.5em;
+  font-size: 1.1em;
   margin-top: 0;
   vertical-align: middle;
   padding-top: 140px;
@@ -283,16 +281,16 @@ blockquote {
 }
 blockquote .fa {
   /* margin: 3%; */
-  font-size: 6em;
+  font-size: 6rem;
 }
 blockquote cite {
-  font-family: 'master_of_breakregular', sans-serif;
-  font-size: 7em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
   letter-spacing: 3px;
 }
 blockquote p {
   text-align: right;
-  font-size: 3em;
+  font-size: 2rem;
   text-transform: capitalize;
 }
 
@@ -310,7 +308,6 @@ blockquote p {
                                      MENU
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Quicksand);
 
 /*html {
      height: 100%;
@@ -370,7 +367,7 @@ blockquote p {
 .menu-expanded {
   transition: all .15s;
   text-align: center;
-  line-height: 10vh;
+  line-height: 8vh;
   width: 100%;
   height: 100%;
   border-radius: 0px;
@@ -398,7 +395,7 @@ blockquote p {
   color: white;
   font-size: 2em;
   font-family: 'Raleway', sans-serif;
-  padding: 5px;
+  padding: 2px;
 }
 .menu-expanded a:hover {
   transition: all .15s;
@@ -407,7 +404,7 @@ blockquote p {
   color: #439CE3;
   font-weight: bold;
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 .menu-expanded .bar {
   background-color: transparent;
@@ -419,9 +416,9 @@ blockquote p {
   transform: rotate(45deg);
   top: -0px;
 }
-.menu-expanded .bar:after {
+.menu-expanded .bar:after, nav a:after {
   transition: all .25s;
-  content: "";
+/*   content: ""; */
   transform: rotate(-45deg);
   top: 0px;
 }
@@ -430,7 +427,35 @@ nav li {
   list-style-type: none;
 }
 
+/* ==========================================================================
+   footer
+   ========================================================================== */
+   footer {
+     background-color: black;
+     text-align: center;
+   }
+.social-net{
+  width: 100%;
+  display: flex;
+  justify-content:  flex-end;
+  padding: 40px;
 
+}
+/* .social-net a {
+  padding-left: 15px;
+
+} */
+.social-net a{
+    color: #C3C6C7;
+    padding: 5px;
+    border-radius: 20%;
+}
+.social-net a:hover{
+    color: #439CE3;
+    /* background-color: #e7eaeb; */
+    padding: 5px;
+  /*   border:2px dotted #C3C6C7; */
+}
 /* ==========================================================================
       medias query
       ========================================================================== */

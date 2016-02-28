@@ -59,7 +59,7 @@ function userName(){
 
 }
 function sayMe(){
-    devText.innerHTML =" Et vous, comment vous appelez-vous ? ";
+    devText.innerHTML =" Comment vous appelez-vous ? ";
     visitorInput.style.display="block";
 }
 
