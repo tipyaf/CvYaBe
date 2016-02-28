@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV paralaxe</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel='stylesheet' type='text/css'>
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,39 +24,48 @@
   <body>
 
     <div id="home" class="home">
-attention! pbs à regler <br>=====================<br>===> scroll down ne fonctionne pas après ouverture du modal (tester mute ["  ev.preventDefault()"] dans cvVideo.js)<br>===> background ["#savoir-etre"] ne prend pas l'icone du scroll down
+      <!-- attention! pbs à regler <br>=====================<br>===> scroll down ne fonctionne pas après ouverture du modal (tester mute ["  ev.preventDefault()"] dans cvVideo.js)<br>===> background ["#savoir-etre"] ne prend pas l'icone du scroll down
+ -->
       <video autoplay id="bgvid" loop>
         <source src=".webm" type="video/webm">
         <source src="video/videv.mp4" type="video/mp4">
       </video>
 
       <div class="name animated fadeInRight">
-        <img class="yannick animated fadeInUp0" src="images/YannickBenchimol.png" alt="logo"/>
-        <h2 class="animated fadeInRight colorize">développeur web</h2>
+        <h1>
+          <span class="capitalize">y</span>a<span class="colorize">n</span>nick
+          <span class="capitalize"> b</span>e<span class="colorize">n</span>chi<span class="colorize">m</span>ol
+        </h1>
+        <h2 class="colorize">développeur web</h2>
       </div>
 
-        <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
-        <button id="vidButton" class="vidbtn" type="button" href="#animatedModal" name="vidbutton">Découvrir le Cv vidéo</button>
+      <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
 
-    <div id="animatedModal">
-        <div  id="btn-close-modal" class="close-animatedModal">
-          <i class="closeCv fa fa-times"></i>
-        </div>
-        <div class="modal-content">
-<!--            Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen!
--->          <iframe id="cvVideo" class="cvVideo animated fadeInDown tosavoirs" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe>
-        </div>
+      <button id="vidButton" class="vidbtn" type="button" name="vidbutton">vidéo de présentation</button>
+
+  <!--     <div id="animatedModal">
+    <div id="btn-close-modal" class="close-animatedModal">
+      <i class="closeCv fa fa-times"></i>
     </div>
+    <div class="modal-content"> -->
+<!--  </div>
+     </div> -->
+
+     <!--            Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen!-->
+   <iframe id="cvVideo" class="cvVideo" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe>
+   <!-- <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i> -->
+
 
 
       <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
     </div>
 
 
-    <section id="savoirs" class="savoirs parallax-window" data-parallax="scroll" data-image-src="images/myback.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <div class="scrollMenu">
+
+    <section id="savoirs" class="savoirs parallax-window" data-parallax="scroll" data-image-src="images/myback.jpg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         <i class="fa fa-angle-double-down fa-3x down toblockquote"></i>
-      </div>
+
     </section>
 
     <section id="blockquote" class="blockquote">
@@ -64,22 +73,20 @@ attention! pbs à regler <br>=====================<br>===> scroll down ne foncti
         <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
         <cite>Ils ne savaient pas que c’était impossible, alors ils l’ont fait.</cite>
         <i class="fa fa-quote-right fa-3x fa-pull-right fa-border"></i>
-          <p>mark twain</p>
+        <p>mark twain</p>
       </blockquote>
 
       <i class="fa fa-angle-double-down fa-3x down toparcours"></i>
-      </section>
+    </section>
 
     <section id="parcours" class="parcours parallax-window" data-parallax="scroll" data-image-src="images/bodyback.jpg">
       <i class="down fa fa-angle-double-down fa-3x toetre"></i>
     </section>
 
+    <section id="savoir-etre" class="savoir-etre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt moll
+    </section>
 
-
-      <section id="savoir-etre" class="savoir-etre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt moll
-      </section>
-
-      <i class="fa fa-angle-double-down fa-3x down tocontacts"></i>
+    <i class="fa fa-angle-double-down fa-3x down tocontacts"></i>
 
     <section id="contacts" class="contacts">
 
@@ -123,12 +130,14 @@ attention! pbs à regler <br>=====================<br>===> scroll down ne foncti
         });
       });
     </script>
-    <script src="js/scroll.js" charset="utf-8"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/videoBack.js" charset="utf-8"></script>
-    <script src="js/animatedModal.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/smoothScroll.js" charset="utf-8"></script>
     <script src="js/cvVideo.js" charset="utf-8"></script>
 
   </body>

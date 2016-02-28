@@ -43,22 +43,22 @@ section {
 }
 h1 {
   /* text-transform: capitalize; */
-  font-family: 'master_of_breakregular', sans-serif;
-  font-size: 5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  font-style: italic;
 }
 .colorize {
   color: #439CE3;
 }
+.capitalize{
+  font-family: 'master_of_breakregular', sans-serif;
+  text-transform: capitalize;
+}
 h2 {
   text-transform: uppercase;
-  letter-spacing: 10px;
-  font-size: 2rem;
-  background-color: white;
-  border-radius: 50px;
-  height: 45px;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  letter-spacing: 5px;
+  font-size: 1rem;
+
 }
 footer {
   background-color: #439CE3;
@@ -75,6 +75,7 @@ h3 {
   padding-top: 40px;
   bottom: 0;
   text-align: center;
+  opacity: 0.5;
 }
 .down:hover{
   cursor: pointer;
@@ -87,10 +88,12 @@ h3 {
   position: relative;
   width: 100%;
   height: 100vh;
-  /*padding-top: 40px;*/
-  /*padding-bottom: 40px;*/
+  padding-bottom: 5%;
   text-align: center;
-  /*background-color: red;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .savoirs, .parcours, .savoir-etre, .contacts {
   padding-top: 40px;
@@ -122,6 +125,7 @@ h3 {
   background: transparent;
 }
 
+
 /*
 
 /* ==========================================================================
@@ -131,11 +135,13 @@ h3 {
 
 /* home
    ========================================================================== */
-
-.yannick {
-  width: 74%;
-  margin-top: 6%;
+.name{
+  margin-top: 10%;
+/* height:15vh; */
+ line-height: 8px;
+ text-shadow: 1px 5px 14px rgba(255, 255, 255, 0.2);
 }
+
 .cvVideo {
   width: 100%;
   height: 100%;
@@ -143,44 +149,18 @@ h3 {
 }
 
 .vidbtn {
-	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
-	background:-moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
-	background:-webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
-	background:-o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
-	background:-ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
-	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0',GradientType=0);
-	background-color:#3d94f6;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #337fed;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:21px;
-	font-weight:bold;
-	padding:28px 76px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #1570cd;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  border: none;
+  background-color: transparent;
+  padding: 15px 30px;
+  border: 1px solid #cfd4d2;
+  color: #cfd4d2;
+  border-radius: 28px;
   outline: none;
+  font-weight: lighter;
+  font-size: 12px;
 }
 .vidbtn:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
-	background:-moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
-	background:-webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
-	background:-o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
-	background:-ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
-	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6',GradientType=0);
-	background-color:#1e62d0;
+  border: 1px solid #a1a1a1;
+  color: #939594;
 }
 
 .modal-content {
@@ -202,7 +182,6 @@ h3 {
   font-size: 8px;
   margin-top: 10px;
   margin-left: 20px;
-
 }
 .closeCv:hover {
   background-color: white;
@@ -211,10 +190,56 @@ h3 {
 .fa-times {
   font-size: 10em;
 }
-#cvVideo{
+
+/* ==========================================================================
+   Video background
+   ========================================================================== */
+
+video {
+  position: fixed;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -150;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  /*background: url('../images/vidback.jpg') no-repeat;*/
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+.stopfade {
+  opacity: .5;
+}
+#pauseButton {
+  opacity: 0.8;
+  border-radius: 50%;
+  background-color: #439CE3;
+  padding: 9px;
+  font-size: 9px;
+  position: fixed;
+  right: 12px;
+  top: 24px;
+}
+#pauseButton:hover {
+  opacity: 1;
+  border-radius: 50%;
+  background-color: white;
+  color: #439CE3;
+}
+
+/*
+   cv video
+   ========================================================================== */
+/*    #cvVideo{
   width: 100vw;
   height: 100vh;
-}
+  background-attachment: fixed;
+ */}
 
 /*
 savoirs
@@ -242,6 +267,7 @@ blockquote {
   margin-top: 0;
   vertical-align: middle;
   padding-top: 140px;
+  border: none !important;
 }
 blockquote .fa {
   /* margin: 3%; */
@@ -388,46 +414,6 @@ nav li {
   list-style-type: none;
 }
 
-/* ==========================================================================
-   Video background
-   ========================================================================== */
-
-video {
-  position: fixed;
-  opacity: 0.2;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -150;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  /*background: url('../images/vidback.jpg') no-repeat;*/
-  background-size: cover;
-  -webkit-transition: 1s opacity;
-  transition: 1s opacity;
-}
-.stopfade {
-  opacity: .5;
-}
-#pauseButton {
-  opacity: 0.8;
-  border-radius: 50%;
-  background-color: #439CE3;
-  padding: 9px;
-  font-size: 9px;
-  position: fixed;
-  right: 12px;
-  top: 24px;
-}
-#pauseButton:hover {
-  opacity: 1;
-  border-radius: 50%;
-  background-color: white;
-  color: #439CE3;
-}
 
 /* ==========================================================================
       medias query
