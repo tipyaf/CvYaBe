@@ -29,6 +29,7 @@ function showTextPlay(){
 function hideTextPlay(){
   devText.innerHTML ="Développeur web";
   visitorInput.style.display = "none";
+  devText.innerHTML ="Bienvenue sur mon portofolio";
 }
 
 function showTextScroll(){
@@ -36,26 +37,29 @@ function showTextScroll(){
   visitorInput.style.display = "none";
 }
 function hideTextScroll(){
-  devText.innerHTML ="Développeur web";
+  devText.innerHTML ="Bienvenue sur mon portofolio ";
 }
 
 var closeInput;
+var writeName;
 
 function hideInput(){
    visitorInput.style.display = "none";
-    devText.innerHTML ="Bienvenue " + visitorInput.value.toUpperCase();
+    devText.innerHTML ="Bienvenue sur mon portofolio ";
 }
 
-
+function inputName(){
+   titleName.innerHTML = "BONJOUR "+ visitorInput.value.toUpperCase() + " !";
+}
 
 function userName(){
- titleName.innerHTML = "Bonjour "+ visitorInput.value.toUpperCase() + " !";
- closeInput = setTimeout(hideInput, 3000);
+  writeName = setTimeout(inputName, 7000);
+  closeInput = setTimeout(hideInput, 7000);
 
 
 }
 function sayMe(){
-    devText.innerHTML =" Et vous, comment vous appelez vous ? ";
+    devText.innerHTML =" Et vous, comment vous appelez-vous ? ";
     visitorInput.style.display="block";
 }
 

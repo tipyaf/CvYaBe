@@ -370,16 +370,20 @@ blockquote p {
 .menu-expanded {
   transition: all .15s;
   text-align: center;
-  line-height: 50px;
+  line-height: 10vh;
   width: 100%;
   height: 100%;
   border-radius: 0px;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  background-image: url('../images/myback.jpg');
+  background-color: rgba(0, 0, 0, 1);
+  /* background-image: url('../images/bgvid.png'); */
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .menu-expanded ul {
   transition: all .05s;
