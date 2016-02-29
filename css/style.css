@@ -314,7 +314,7 @@ blockquote cite {
   font-family: 'master_of_breakregular', sans-serif;
   font-size: 5rem;
   letter-spacing: 3px;
-}  width: 100vw;
+}
 blockquote p {
   text-align: right;
   font-size: 2rem;
@@ -363,12 +363,31 @@ blockquote p {
   text-align: center;
   padding-top: 5%;
   color:#439ce3;
+
 }
 .picto i{
   padding: 15px;
 }
-
-
+.picto ul{
+  list-style-type: none;
+}
+.picto li{
+  display: inline-flex;
+  flex-direction: column;
+}
+.picto img{
+  width: 100%;
+  padding: 0 5px;
+}
+.picto p {
+  font-size: 0.8rem;
+}
+.guit{
+  margin-top:  19px;
+}
+.picto li:hover{
+  color: white;
+}
 /*
      contacts
      ========================================================================== */
