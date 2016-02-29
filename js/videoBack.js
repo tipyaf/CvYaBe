@@ -1,5 +1,6 @@
 var vid = document.getElementById("bgvid");
 var pauseButton = document.querySelector("#pauseButton");
+var logoLanguages = document.querySelector('#web-logo');
 
 function vidFade() {
   vid.classList.add("stopfade");
@@ -32,9 +33,11 @@ $(document).ready(function(){
 	// fade in #pausebutton
 	$(function () {
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 500) {
+			if ($(this).scrollTop() > 480) {
 				$('#pauseButton').fadeOut();
         vid.pause();
+    
+
 			} else {
 				$('#pauseButton').fadeIn();
         vid.play();

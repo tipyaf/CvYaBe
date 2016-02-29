@@ -11,76 +11,49 @@
 // });
 
 
-
-var cvVidButton = document.getElementById('vidButton');
+var download = document.getElementById('download');
+// var cvVidButton = document.getElementById('vidButton');
 // var cvVideo = document.getElementById('cvVideo');
-var closeCvVideo = document.querySelector('.closeCv');
+// var closeCvVideo = document.querySelector('.closeCv');
 var devText = document.querySelector('h2');
 var scrolldown = document.querySelector('.down');
 var textePlay = document.getElementById('hide');
-var titleName = document.querySelector('h1');
-var visitorInput = document.getElementById('userInput');
-var visitorName = visitorInput.value;
+// var titleName = document.querySelector('h1');
+// var visitorInput = document.getElementById('userInput');
+// var visitorName = visitorInput.value;
+
+function showTextDownload (){
+  devText.innerHTML ="Télégarger le CV pdf";
+}
+
 
 function showTextPlay(){
-  devText.innerHTML =" " + "Lire la vidéo de présentation";
-  visitorInput.style.display = "none";
+  devText.innerHTML ="Lire la vidéo de présentation";
 }
+
 function hideTextPlay(){
   devText.innerHTML ="Développeur web";
-  visitorInput.style.display = "none";
-  devText.innerHTML ="Bienvenue sur mon portofolio";
 }
 
 function showTextScroll(){
   devText.innerHTML ="Découvrir la page suivante";
-  visitorInput.style.display = "none";
 }
 function hideTextScroll(){
-  devText.innerHTML ="Bienvenue sur mon portofolio ";
+  devText.innerHTML ="Développeur Web";
 }
 
-var closeInput;
-var writeName;
-
-function hideInput(){
-   visitorInput.style.display = "none";
-    devText.innerHTML ="Bienvenue sur mon portofolio ";
-}
-
-function inputName(){
-   titleName.innerHTML = "BONJOUR "+ visitorInput.value.toUpperCase() + " !";
-}
-
-function userName(){
-  writeName = setTimeout(inputName, 7000);
-  closeInput = setTimeout(hideInput, 7000);
 
 
-}
-function sayMe(){
-    devText.innerHTML =" Comment vous appelez-vous ? ";
-    visitorInput.style.display="block";
-}
-
-// textePlay.style.display = "none";
-
-// function openModal(){
-// textePlay.style.display = "block";
-// }
-//
-// function closeModal(){
-//   texte.style.display = "none";
-// }
 
 
-visitorInput.style.display = "none";
-
-cvVidButton.addEventListener('mouseout', hideTextPlay);
-cvVidButton.addEventListener('mouseover', showTextPlay);
+// cvVidButton.addEventListener('mouseout', hideTextPlay);
+// cvVidButton.addEventListener('mouseover', showTextPlay);
 scrolldown.addEventListener('mouseout', hideTextScroll);
 scrolldown.addEventListener('mouseover', showTextScroll);
-titleName.addEventListener('mouseover' , sayMe);
+// titleName.addEventListener('mouseover' , sayMe);
+download.addEventListener('mouseover', showTextDownload);
+download.addEventListener('mouseout', hideTextPlay);
+
 // titleName.addEventListener('mouseout' , hideTextPlay);
 // visitorInput.addEventListener('input', UserName);
 // textePlay.innerHTML =" " + "Lire la vidéo de présentation";
@@ -88,22 +61,22 @@ titleName.addEventListener('mouseover' , sayMe);
 // cvVidButton.addEventListener('click', openModal, false);
 // closeCvVideo.addEventListener('click', closeModal, false);
 
- $('h1').on('click', function() {
-
-    $("#cvVideo")[0].src += "?autoplay=0";
-        ev.preventDefault();
-});
-
-
-// lecture youtube à l'ouverture.
-$(document).ready(function() {
-  $('#vidButton').on('click', function(ev) {
-
-    $("#cvVideo")[0].src += "&autoplay=1";
-    ev.preventDefault();
-
-    $('html,body').animate({
-        scrollTop: $("#cvVideo").offset().top},
-        'slow');
-  });
-});
+//  $('h1').on('click', function() {
+//
+//     $("#cvVideo")[0].src += "?autoplay=0";
+//         ev.preventDefault();
+// });
+//
+//
+// // lecture youtube à l'ouverture.
+// $(document).ready(function() {
+//   $('#vidButton').on('click', function(ev) {
+//
+//     $("#cvVideo")[0].src += "&autoplay=1";
+//     ev.preventDefault();
+//
+//     $('html,body').animate({
+//         scrollTop: $("#cvVideo").offset().top},
+//         'slow');
+//   });
+// });

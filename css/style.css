@@ -37,6 +37,7 @@ body {
   background-attachment: fixed;
   color: white;
   font-family: 'Open Sans', sans-serif;
+
 }
 section {
   height: 100vh;
@@ -95,6 +96,7 @@ h3 {
 }
 .savoirs, .parcours, .savoir-etre, .contacts {
   padding-top: 40px;
+  height: 100vh;
 }
 .savoirs {
   background-image: url('../images/partback.jpg');
@@ -119,9 +121,10 @@ h3 {
   background-color: #439CE3;
 }
 .parallax-window {
-  min-height: 400px;
+  min-height: 100vh;
   background: transparent;
 }
+
 
 
 /*
@@ -140,13 +143,11 @@ h3 {
  text-shadow: 1px 5px 14px rgba(255, 255, 255, 0.2);
 }
 
-
-
-.cvVideo {
+/*.cvVideo {
   width: 100%;
   height: 100%;
   z-index: -50;
-}
+}*/
 #userInput{
   text-align: center;
   width: 100%;
@@ -154,7 +155,7 @@ h3 {
   outline: none;
   border-color: #439CE3;
 }
-.vidbtn {
+/*.vidbtn {
   background-color: transparent;
   padding: 15px 30px;
   border: 1px solid #cfd4d2;
@@ -167,39 +168,29 @@ h3 {
 .vidbtn:hover {
   border: 1px solid #a1a1a1;
   color: #939594;
+}*/
+
+#download {
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 1px solid #cfd4d2;
+  color: #cfd4d2;
+  border-radius: 28px;
+  outline: none;
+  font-weight: lighter;
+  font-size: 12px;
+}
+#download:hover {
+  border: 1px solid #a1a1a1;
+  color: #939594;
 }
 
-
-.modal-content {
-  width: 100vw;
-  height: 100vh;
-}
-.close-animatedModal {
-  /* width: 10%; */
-  position: fixed;
-  text-align: center;
-  z-index: 2;
-  top: 2px;
-}
-.closeCv {
-  border-radius: 50%;
-  color: white;
-  background-color: #439CE3;
-  padding: 8px;
-  font-size: 8px;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-.closeCv:hover {
-  background-color: white;
-  color: #439CE3;
-}
 .fa-times {
   font-size: 10em;
 }
-.modal{
-  background-color: transparent !important;
-}
+
+
+
 
 /* ==========================================================================
    Video background
@@ -249,19 +240,55 @@ video {
   width: 100vw;
   height: 100vh;
   background-attachment: fixed;
- */}
+ }*/
 
 /*
 savoirs
-   ==========================================================================
+   ==========================================================================*/
+  .savoirs-box{
+    /*background-image:url('../images/archiback.jpg');*/
+    background-color: white;
+    background-attachment: fixed;
+    height:85vh;
+    border-radius: 15%;
+    border: 1px dashed white;
+  }
 
-
+  h3, .savoirs p{
+    color: #439CE3;
+    text-shadow: 1px 5px 14px rgba(255, 255, 255, 0.2);
+  }
+  .basic, .frameworks, .audio, .visual{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10%;
+  }
+  .logimg{
+    width:35%;
+  }
+.visual{
+  background-image: url('../images/photo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.audio{
+  background-image: url('../images/headphone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.toblockquote{
+  color : red;
+  padding-top: 1px;
+}
+.savoirs h4{
+  font-size: 1rem;
+}
 /*
    blockquote
    ========================================================================== */
 
 .blockquote {
-  background-color: black;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -284,10 +311,10 @@ blockquote .fa {
   font-size: 6rem;
 }
 blockquote cite {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'master_of_breakregular', sans-serif;
   font-size: 5rem;
   letter-spacing: 3px;
-}
+}  width: 100vw;
 blockquote p {
   text-align: right;
   font-size: 2rem;
@@ -297,6 +324,49 @@ blockquote p {
 /*
       parcours
       ========================================================================== */
+
+
+/*
+   savoir-etre
+   ========================================================================== */
+.savoir-etre{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box{
+  display:flex;
+  flex-direction: row;
+}
+.pic, .introduce{
+  justify-content:space-between;
+}
+.pic {
+  width: 15%;
+  height: 15%;
+  margin-left: 10px;
+  border: 2px solid #439ce3;
+  outline: 6px solid white;
+  /*outline-color: white;*/
+}
+.introduce{
+  padding-left: 30px;
+}
+.introduce p{
+  padding-top: 45px;
+  font-weight: lighter;
+  text-align: justify;
+}
+.picto{
+  text-align: center;
+  padding-top: 5%;
+  color:#439ce3;
+}
+.picto i{
+  padding: 15px;
+}
 
 
 /*

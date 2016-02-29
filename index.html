@@ -24,104 +24,134 @@
   <body>
 
     <div id="home" class="home">
-      <!-- attention! pbs à regler <br>=====================<br>===> scroll down ne fonctionne pas après ouverture du modal (tester mute ["  ev.preventDefault()"] dans cvVideo.js)<br>===> background ["#savoir-etre"] ne prend pas l'icone du scroll down
- -->
+
       <video autoplay id="bgvid" loop>
-        <source src=".webm" type="video/webm">
-        <source src="video/videv.mp4" type="video/mp4">
+              <source src=".webm" type="video/webm">
+              <source src="video/videv.mp4" type="video/mp4">
       </video>
 
-      <div class="name animated fadeInRight">
-        <h1>
-          <span class="capitalize">y</span>a<span class="colorize">n</span>nick
-          <span class="capitalize"> b</span>e<span class="colorize">n</span>chi<span class="colorize">m</span>ol
-        </h1>
+            <div class="name animated fadeInRight">
+              <h1>
+      <span class="capitalize">y</span>a<span class="colorize">n</span>nick
+      <span class="capitalize"> b</span>e<span class="colorize">n</span>chi<span class="colorize">m</span>ol
+              </h1>
 
-        <h2 class="colorize">développeur web</h2>
-        <span id="hide"></span>
-        <input id="userInput" type="text" name="name-user" oninput="userName()">
+              <h2 class="colorize">développeur web</h2>
+              <span id="hide"></span>
+            </div>
+
+            <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
+
+            <a id="download" href="Cv-Yannick-Benchimol-Développeur"><i class="fa fa-download"></i></a>
+
+      <!-- boutton pla cv video -->
+            <!-- <button id="vidButton" class="vidbtn" type="button" name="vidbutton"><i class="fa fa-play"></i></button> -->
+
+
+              <!--     <div id="animatedModal">
+      <div id="btn-close-modal" class="close-animatedModal">
+            <i class="closeCv fa fa-times"></i>
       </div>
+      <div class="modal-content"> -->
+            <!--  </div>
+       </div> -->
+       <!-- <div id="myModal" class="modal modal-fullscreen fade" role="dialog">
+             <div class="modal-dialog"> -->
 
-      <i id="pauseButton" class="fa fa-pause animated zoomIn"></i>
-
-      <button id="vidButton" class="vidbtn" type="button" name="vidbutton" data-toggle="modal" data-target="#myModal"><i class="fa fa-play"></i></button>
-
-
-  <!--     <div id="animatedModal">
-    <div id="btn-close-modal" class="close-animatedModal">
-      <i class="closeCv fa fa-times"></i>
-    </div>
-    <div class="modal-content"> -->
-<!--  </div>
-     </div> -->
-     <div id="myModal" class="modal modal-fullscreen fade" role="dialog">
-       <div class="modal-dialog">
-
-         <!-- Modal content-->
-         <div class="modal-content">
-           <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal">&times;</button>
-             <h4 class="modal-title">Modal Header</h4>
-           </div>
-           <div class="modal-body">
-             <!--            Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen!-->
-           <iframe id="cvVideo" class="cvVideo" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe>
-           <!-- <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i> -->
-           </div>
-           <div class="modal-footer">
-             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-           </div>
-         </div>
-
+               <!-- Modal content-->
+               <!-- <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Modal Header</h4><i class="fa fa-download"></i<i class="fa fa-download"></i>
+         <!--            Attention! ajouter "?fs=0" apres l'adresse de l'iframe pour enlever fullscreen!-->
+       <!-- <iframe id="cvVideo" class="cvVideo" src="https://www.youtube.com/embed/k4yyYOvD3hI?&fs=0" frameborder="0" allowfullscreen autoplay="1"></iframe> -->
+       <!-- <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i> -->
+       <!-- </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
        </div>
-     </div>
+               </div> -->
+
+             <!-- </div>
+       </div> -->
 
 
 
-      <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
+            <i class="fa fa-angle-double-down fa-3x down tosavoirs"></i>
     </div>
 
 
 
-    <section id="savoirs" class="savoirs parallax-window" data-parallax="scroll" data-image-src="images/bluopback.png">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <i class="fa fa-angle-double-down fa-3x down toblockquote"></i>
+    <section id="savoirs" class="savoirs parallax-window" data-parallax="scroll" data-image-src="images/archiback.jpg">
+
+        <div class="container">
+          <div class="row">
+
+          
+
+            <i class="fa fa-angle-double-down fa-3x down toblockquote"></i>
+          </div>
+        </div>
 
     </section>
 
     <section id="blockquote" class="blockquote">
-      <blockquote>
-        <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
-        <cite>Ils ne savaient pas que c’était impossible, alors ils l’ont fait.</cite>
-        <i class="fa fa-quote-right fa-3x fa-pull-right fa-border"></i>
-        <p>mark twain</p>
-      </blockquote>
+      <div class="container">
+        <blockquote>
+          <i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i>
+          <cite>Ils ne savaient pas que c’était impossible, alors ils l’ont fait.</cite>
+          <i class="fa fa-quote-right fa-3x fa-pull-right fa-border"></i>
+          <p>mark twain</p>
+        </blockquote>
 
-      <i class="fa fa-angle-double-down fa-3x down toparcours"></i>
+        <i class="fa fa-angle-double-down fa-3x down toparcours"></i>
+      </div>
     </section>
 
     <section id="parcours" class="parcours parallax-window" data-parallax="scroll" data-image-src="images/bodyback.jpg">
-      <i class="down fa fa-angle-double-down fa-3x toetre"></i>
+
+
+
+    <i class="down fa fa-angle-double-down fa-3x toetre"></i>
     </section>
 
-    <section id="savoir-etre" class="savoir-etre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt moll
+    <section id="savoir-etre" class="savoir-etre">
+      <div class="container box">
+        <img src="images/photo-cv.jpg" alt="yannick_benchimol" class="pic">
+        <div class="introduce">
+          <h3><span class="capitalize">à</span> propos...</h3>
+            <p>Passionné de musique, je pratique le chant, la guitare, l'écriture et la M.A.O. Après une expérience comme Dj au début de ma carrière professionnelle, j'ai crée un groupe de chanson française avec lequel nous avons sorti un album. Suite à cette expérience unique, j'ai décidé de découvrir de nouveaux horizons. <br>
+            Pour cela, j'ai d'abord passé un DAEU (équivalent du bac) que j'ai obtenu à 32 ans avec mention. En discutant avec des amis développeurs, j'ai commencé à m'intéresser à la programation que je pensais alors inaccessible. C'est en m'inscrivant sur Openclassrooms et en y validant la certification HTML5/CSS3 que j'ai acquis la conviction que je devais me former d'avantage afin de devenir développeur. <br>
+            Depuis, je concilie ma passion pour la musique avec ma passion pour la programmation et je m'éclate !</p>
+
+
+        </div>
+      </div>
+      <div class="picto">
+        <h5><span class="capitalize">c</span>entres d'intêrets:</h5>
+        <i class="fa fa-headphones fa-2x"></i>
+        <i class="fa fa-code fa-2x"></i>
+        <i class="fa fa-pencil fa-2x"></i>
+        <i class="fa fa-futbol-o fa-2x"></i>
+      </div>
+
     </section>
 
-    <i class="fa fa-angle-double-down fa-3x down tocontacts"></i>
+        <i class="fa fa-angle-double-down fa-3x down tocontacts"></i>
 
     <section id="contacts" class="contacts">
 
-      jhjhjhjhjhjhjjjh
 
     </section>
 
     <footer>
       <hr>
+      <i class="fa fa-download"></i>
       <div class="social-net">
-      <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-      <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-      <a href="#"><i class="fa fa-github fa-2x"></i></a>
+        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fa fa-github fa-2x"></i></a>
       </div>
 
     </footer>
