@@ -259,20 +259,29 @@ savoirs
   }
   .savoirs-box{
     width: 50%;
-    background-color: black;
+    /*background-color: black;*/
     opacity: 0.9;
-    border: 2px dashed white;
+    /*border: 2px dashed white;*/
   }
   .savoirs-box:hover{
     width: 50%;
     background-color: #439CE3;
-    opacity: 1;
+    /*opacity: 1;*/
   }
   /*.savoirs-box:first-child:hover::before{
     content: "Web"
 }
 .savoirs-box:last-child:hover::before{
   content: "Complémentaire"
+}*/
+.logimg{
+  content: url("../images/technology.svg");
+}
+.logimg:hover{
+  content: url("../images/plus.png");
+}
+/*.logimg:hover:after{
+  content:"+";
 }*/
 .genicon{
   margin-top: 10px;
