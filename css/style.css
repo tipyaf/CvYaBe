@@ -130,7 +130,7 @@ text-align: center;*/
   background-color: #439CE3;
 }
 .parallax-window {
-  min-height: 100vh;
+  min-height: 1000px;
   background: transparent;
 }
 
@@ -521,6 +521,8 @@ blockquote p {
      contacts
      ========================================================================== */
 .contacts{
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   font-size: 100px;
 }
