@@ -81,7 +81,7 @@ text-align: center;*/
 }
 .down {
   display: block !important;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
   bottom: 0;
   text-align: center;
   opacity: 0.5;
@@ -106,7 +106,6 @@ text-align: center;*/
 }
 .savoirs, .parcours, .savoir-etre, .contacts {
   padding-top: 40px;
-  height: 100vh;
 }
 .savoirs {
   background-image: url('../images/partback.jpg');
@@ -116,7 +115,7 @@ text-align: center;*/
   text-align: center;
 }
 .parcours {
-  background-image: url('../images/bodyback.jpg');
+  /*background-image: url('../images/bodyback.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -293,7 +292,8 @@ savoirs
   content:"Web";
   display: flex;
   flex-direction: column;
-  color:#439ce3;
+  /*color:#439ce3;*/
+  color: white;
 
 
 }
@@ -301,16 +301,16 @@ savoirs
   content: "Image";
   display: flex;
   flex-direction: column;
-  color:#439ce3;
-
+  /*color:#439ce3;*/
+  color: white;
 
 }
 .savoirs li:nth-child(3):hover:after{
   content: "Son";
   display: flex;
   flex-direction: column;
-  color:#439ce3;
-
+  /*color:#439ce3;*/
+  color: white;
 }
 
 .logiconbox{
@@ -423,9 +423,38 @@ blockquote p {
   text-transform: capitalize;
 }
 
+.toparcours{
+  margin-top: 100px;
+}
+
 /*
       parcours
       ========================================================================== */
+.parcours h2{
+  text-shadow: 2px 1px 1px rgba(45, 45, 45, 1);
+  background-color: rgba(11, 11, 11, 0.68);
+}
+.parcours h3{
+    text-shadow: 2px 1px 1px rgba(45, 45, 45, 1);
+    /*background-color: rgba(11, 11, 11, 0.68);*/
+  /*padding-left: 50px;
+  margin-top: 35px;
+  z-index: 300;*/
+}
+.parcours img{
+  width: 100vw;
+  height: 100vh;
+}
+.item{
+  width: 100vw;
+  height: 100vh;
+}
+
+.toetre{
+  z-index: 300;
+  margin-top: -30px;
+}
+
 
 
 /*
@@ -491,6 +520,35 @@ blockquote p {
 /*
      contacts
      ========================================================================== */
+.contacts{
+  text-align: center;
+  font-size: 100px;
+}
+.mail, .phone{
+  width: 100%;
+  height: 30%;
+  /*display: flex;
+  align-items: center;*/
+/*margin-left: 15%;*/
+margin-top: 30px;
+
+}
+.contacts a{
+  font-size:10rem;
+  color: white;
+}
+.contacts a:hover{
+  text-decoration: none;
+  color: #c9c9c9;
+}
+.contacts h3{
+  height: 2%;
+  color: white;
+  padding-left: 45px;
+  text-align: left;
+
+}
+
 
 
 /* ==========================================================================
@@ -622,29 +680,48 @@ nav li {
    footer {
      background-color: black;
      text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;;
    }
+   .foot-content{
+     width: 20%;
+     margin: auto;
+     padding: 30px;
+   }
+
 .social-net{
-  width: 100%;
-  display: flex;
-  justify-content:  flex-end;
-  padding: 40px;
-
+  /*width: 33%;*/
 }
-/* .social-net a {
-  padding-left: 15px;
 
-} */
 .social-net a{
     color: #C3C6C7;
     padding: 5px;
     border-radius: 20%;
+    text-decoration: none;
 }
 .social-net a:hover{
     color: #439CE3;
-    /* background-color: #e7eaeb; */
     padding: 5px;
-  /*   border:2px dotted #C3C6C7; */
 }
+footer p{
+  /*width: 33%;*/
+  font-weight: lighter;
+  font-size: 1rem;
+  padding: 15px 0;
+}
+footer #download{
+  /*width: 33%;*/
+}
+footer #download:hover{
+  color: #439CE3;
+  text-decoration: none;
+  /*padding: 40px;*/
+}
+
+
+
 /* ==========================================================================
       medias query
       ========================================================================== */

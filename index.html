@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
-
+    <link rel="stylesheet" href="css/hover-min.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel='stylesheet' type='text/css'>
 
 
@@ -123,10 +123,10 @@
               <ul>
                 <li>
                   <img src="images/image.png" alt="image" class="imagicon">
+                </li>
                   <li>
                     <img src="images/technology.png" alt="web" class="webicon">
                   </li>
-                </li>
                 <li>
                   <img src="images/music.png" alt="music" class="musicon">
                 </li>
@@ -151,9 +151,75 @@
       </div>
     </section>
 
-    <section id="parcours" class="parcours parallax-window" data-parallax="scroll" data-image-src="images/bodyback.jpg">
+    <section id="parcours" class="parcours">
 
 
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/dj.jpg" alt="dj">
+              <div class="carousel-caption">
+                  <h3><span class="capitalize">P</span>arcours</h3>
+                <h2> DJ (Le Marais, Le Gotha, La Dune, Les Planches...)</h2>
+                2001
+              </div>
+            </div>
+            <div class="item">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QWXigwp8heM" frameborder="0" allowfullscreen autoplay="0"></iframe>
+              <div class="carousel-caption">
+                  <h3><span class="capitalize">P</span>arcours</h3>
+                <h2>Chanteur/Auteur du groupe Analistik</h2>
+                2004
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/tam.jpg" alt="tam">
+              <div class="carousel-caption">
+                  <h3><span class="capitalize">P</span>arcours</h3>
+                <h2>Chargé de relation terrain (TAM)</h2>
+                2010
+              </div>width="100%" height="100%"
+            </div>
+            <div class="item">
+              <img src="images/Gammes.jpg" alt="corus">
+              <div class="carousel-caption">
+                  <h3><span class="capitalize">P</span>arcours</h3>
+                <h2>Agent de service social (Corus)</h2>
+                2015
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/upto.jpg" alt="corus">
+              <div class="carousel-caption">
+                  <h3><span class="capitalize">P</span>arcours</h3>
+                <h2>Formation développeur Web (Upto by Simplon)</h2>
+                2016
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          </div>
 
     <i class="down fa fa-angle-double-down fa-3x toetre"></i>
     </section>
@@ -163,11 +229,10 @@
         <img src="images/photo-cv.jpg" alt="yannick_benchimol" class="pic">
         <div class="introduce">
           <h3><span class="capitalize">S</span>avoir-être</h3>
+          <h4>Né le 06/01/1982, permis B, véhiculé </h4>
             <p>Passionné de musique, je pratique le chant, la guitare, l'écriture et la M.A.O. Après une expérience comme Dj au début de ma carrière professionnelle, j'ai crée un groupe de chanson française avec lequel nous avons sorti un album. Suite à cette expérience unique, j'ai décidé de découvrir de nouveaux horizons. <br>
             Pour cela, j'ai d'abord passé un DAEU (équivalent du bac) que j'ai obtenu à 32 ans avec mention. En discutant avec des amis développeurs, j'ai commencé à m'intéresser à la programation que je pensais alors inaccessible. C'est en m'inscrivant sur Openclassrooms et en y validant la certification HTML5/CSS3 que j'ai acquis la conviction que je devais me former d'avantage afin de devenir développeur. <br>
             Depuis, je concilie ma passion pour la musique avec ma passion pour la programmation et je m'éclate !</p>
-
-
         </div>
       </div>
       <div class="picto">
@@ -183,24 +248,34 @@
       </div>
 
     </section>
-
         <i class="fa fa-angle-double-down fa-3x down tocontacts"></i>
 
     <section id="contacts" class="contacts">
-
+      <h3><span class="capitalize">C</span>ontacts</h3>
+      <div class="phone">
+        <i class="fa fa-mobile"></i>
+        <span>07 60 64 93 53</span>
+      </div>
+      <div class="mail">
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:ya.net@hotmail.fr">Envoyer un mail</a>
+      </div>
 
     </section>
 
     <footer>
       <hr>
-      <i class="fa fa-download"></i>
-      <div class="social-net">
-        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-        <a href="#"><i class="fa fa-github fa-2x"></i></a>
-      </div>
+      <div class="foot-content">
+        <a id="download" href="images/CV-Yannick-Benchimol-Développeur.pdf" download="Yannick_Benchimol_Developpeur_Web_tel:0760649353.pdf" target="_blank"><i class="fa fa-download"></i> CV.pdf</a>
 
+        <p>Site réalisé par Yannick Benchimol après 3 mois de formation Upto by Simplon</p>
+        <div class="social-net">
+          <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+          <a href="#"><i class="fa fa-github fa-2x"></i></a>
+        </div>
+        </div>
     </footer>
     <!-- menu -->
     <div class="menu-collapsed">
@@ -238,7 +313,7 @@
     <!-- <script src="js/smoothScroll.js" charset="utf-8"></script> -->
     <script src="js/cvVideo.js" charset="utf-8"></script>
     <script src="js/savoirs.js" charset="utf-8"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 
 </html>
