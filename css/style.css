@@ -30,9 +30,6 @@
 body {
   max-width: 100%;
   max-height: 100vh;
-  /*background-image: url('../images/macback.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;*/
   background-color: black;
   background-attachment: fixed;
   color: white;
@@ -42,7 +39,6 @@ section {
   height: 100vh;
 }
 h1 {
-  /* text-transform: capitalize; */
   font-family: 'Open Sans', sans-serif;
   font-size: 3em;
   font-style: italic;
@@ -71,14 +67,9 @@ h3, .savoirs p {
 h4 {
   font-weight: lighter;
   font-size: 1.2rem;
-  /*border: 1px solid white;
-padding: 3px;
-background-color: #439CE3;
-text-align: center;*/
 }
 .down {
   display: block !important;
-  /*padding-top: 40px;*/
   bottom: 0;
   text-align: center;
   opacity: 0.5;
@@ -113,22 +104,15 @@ text-align: center;*/
   text-align: center;
 }
 .parcours {
-  /*background-image: url('../images/bodyback.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.savoir-etre {
-  /*   background-image: url('../images/myback.jpg');*/
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;
-  background-attachment: fixed;*/
-}
+
 .contacts {
   background-color: #439CE3;
 }
 .parallax-window {
-  /*min-width: 100%;*/
   min-height: 40px;
   background: transparent;
 }
@@ -145,16 +129,9 @@ text-align: center;*/
 
 .name {
   margin-top: 10%;
-  /* height:15vh; */
   line-height: 8px;
   text-shadow: 1px 5px 14px rgba(255, 255, 255, 0.2);
 }
-
-/*.cvVideo {
-  width: 100%;
-  height: 100%;
-  z-index: -50;
-}*/
 
 #userInput {
   text-align: center;
@@ -164,20 +141,6 @@ text-align: center;*/
   border-color: #439CE3;
 }
 
-/*.vidbtn {
-  background-color: transparent;
-  padding: 15px 30px;
-  border: 1px solid #cfd4d2;
-  color: #cfd4d2;
-  border-radius: 28px;
-  outline: none;
-  font-weight: lighter;
-  font-size: 12px;
-}
-.vidbtn:hover {
-  border: 1px solid #a1a1a1;
-  color: #939594;
-}*/
 
 #download {
   background-color: transparent;
@@ -213,7 +176,6 @@ video {
   z-index: -150;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  /*background: url('../images/vidback.jpg') no-repeat;*/
   background-size: cover;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
@@ -241,13 +203,6 @@ video {
 /*
    cv video
    ========================================================================== */
-
-
-/*    #cvVideo{
-  width: 100vw;
-  height: 100vh;
-  background-attachment: fixed;
- }*/
 
 
 /*
@@ -281,29 +236,22 @@ savoirs
   padding: 10px;
 }
 
-/*.savoirs li::after{
-  padding: 2px
-}*/
-
 .savoirs li:nth-child(2):after {
   content: "Web";
   display: flex;
   flex-direction: column;
-  /*color:#439ce3;*/
   color: white;
 }
 .savoirs li:first-child:after {
   content: "Image";
   display: flex;
   flex-direction: column;
-  /*color:#439ce3;*/
   color: white;
 }
 .savoirs li:nth-child(3):after {
   content: "Son";
   display: flex;
   flex-direction: column;
-  /*color:#439ce3;*/
   color: white;
 }
 .logiconbox {
@@ -313,7 +261,6 @@ savoirs
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /*background-color: rgba(11, 11, 11, 0.68);*/
   padding-bottom: 2%;
 }
 #what {
@@ -371,7 +318,6 @@ savoirs
 }
 .toblockquote {
   color: red;
-  /*padding-top: 1px;*/
 }
 
 /*
@@ -393,12 +339,10 @@ blockquote {
   font-size: 1.1em;
   margin-top: 0;
   vertical-align: middle;
-  /*padding-top: 140px;*/
   border: none !important;
   background-color: rgba(11, 11, 11, 0.68);
 }
 blockquote .fa {
-  /* margin: 3%; */
   font-size: 6rem;
 }
 blockquote cite {
@@ -426,10 +370,6 @@ blockquote p {
 }
 .parcours h3 {
   text-shadow: 2px 1px 1px rgba(45, 45, 45, 1);
-  /*background-color: rgba(11, 11, 11, 0.68);*/
-  /*padding-left: 50px;
-  margin-top: 35px;
-  z-index: 300;*/
 }
 .parcours img {
   width: 100vw;
@@ -465,12 +405,11 @@ blockquote p {
   justify-content: space-between;
 }
 .pic {
-  width: 70.8px;
-  height: 91.6px;
+  width: 70px;
+  height: 91px;
   margin-top: 20px;
   border: 2px solid #439ce3;
   outline: 6px solid white;
-  /*outline-color: white;*/
 }
 .introduce {
   padding-left: 30px;
@@ -598,7 +537,6 @@ blockquote p {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 1);
-  /* background-image: url('../images/bgvid.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -683,10 +621,8 @@ footer {
   padding: 5px;
 }
 footer p {
-  /*width: 33%;*/
   font-weight: lighter;
   font-size: 1rem;
-  /*padding: 15px 0;*/
   color: #439CE3;
 }
 footer #download {
@@ -695,7 +631,6 @@ footer #download {
 footer #download:hover {
   color: #439CE3;
   text-decoration: none;
-  /*padding: 40px;*/
 }
 
 /* ==========================================================================
