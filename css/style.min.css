@@ -176,6 +176,7 @@ video {
   color: #439ce3
 }
 
+
 .savoirs h3{
   text-align: left;
   margin-top: 3%;
@@ -265,12 +266,12 @@ video {
   background-color: rgba(125, 125, 125, 0.35);
   padding: 4%;
   border-radius: 5%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   cursor:pointer;
 }
 .explain:hover{
   background-color:  #439ce3;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 
 }
 
@@ -455,19 +456,27 @@ blockquote p {
   text-align: center;
   font-size: 50px
 }
-.mail, .phone {
-  width: 100%;
-  height: 30%;
-  margin-top: 30px
+.contacts i{
+  color:#85BBFF;
 }
-.contacts a {
+.mail, .phone {
+  width: 70%;
+  height: 30%;
+  margin-top: 30px;
+  background-color: white;
+  padding:25px;
+  border-radius: 8px;
+}
+.contacts p {
   font-size: 10rem;
   color: white;
-  font-size: 50px
+  font-size: 100%;
+  color: #85bbff;
 }
-.contacts a:hover {
-  text-decoration: none;
-  color: #c9c9c9
+.contacts p:hover {
+  color: #6a9cd4;
+  cursor: pointer;
+  
 }
 .contacts h3 {
   height: 2%;
