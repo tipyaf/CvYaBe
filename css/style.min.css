@@ -171,6 +171,10 @@ video {
   background-color: white;
   color: #439ce3
 }
+.savoirs h3{
+  text-align: left;
+  margin-top: 3%;
+}
 .savoirs-content{
   display: -webkit-box;
   display: -webkit-flex;
@@ -192,9 +196,11 @@ video {
 }
 .savoirs-bloc{
   width: 25%;
-  /* height: 100px; */
-/*   border: 1px solid white;
- */
+  border-right: 1px solid #439ce3;
+  border-left: 1px solid #439ce3;
+  padding-left: 3%;
+  padding-right: 3%;
+
 }
 .savoirs-bloc img{
   width: 32px;
@@ -221,9 +227,7 @@ video {
   -webkit-filter: none;
           filter: none;
 }
-.savoirs-bloc.image img:hover::after{
-  content: "text"
-}
+
 .text-savoirs{
     border: 1px solid white;
     height: 100px;
@@ -249,15 +253,18 @@ video {
  -webkit-transition: background-color 1s;
   transition: background-color 1s;
   -webkit-transition: scale() 1s;
+  -webkit-transition: cale() 1s;
   transition: cale() 1s;
-  -webkit-transition: font-size 1s;
-  transition: font-size 1s;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+  background-color: rgba(125, 125, 125, 0.35);
   padding: 4%;
   border-radius: 5%;
+  font-size: 1.3rem;
+  cursor:pointer;
 }
 .explain:hover{
-  background-color: #439ce3;
-  background-size: 100%;
+  background-color:  #439ce3;
   font-size: 1.4rem;
 
 }
@@ -267,7 +274,9 @@ video {
   line-height: 20px;
   text-align: justify;
   margin-left: 5px;
+  text-shadow: 3px 3px 5px rgba(123, 123, 123, 1);
 }
+
 .toblockquote {
   color: red
 }
@@ -394,10 +403,13 @@ blockquote p {
 .picto {
   text-align: center;
   padding-top: 5%;
-  color: #439ce3
+  color: #439ce3;
+
 }
 .picto i {
-  padding: 15px
+  padding: 15px;
+  -webkit-filter:grayscale(80%);
+          filter:grayscale(80%);
 }
 .picto ul {
   list-style-type: none
@@ -415,7 +427,14 @@ blockquote p {
 }
 .picto img {
   width: 100%;
-  padding: 0 5px
+  padding: 0 5px;
+  -webkit-filter:grayscale(80%);
+          filter:grayscale(80%);
+}
+.picto i:hover, .picto img:hover{
+  -webkit-filter:grayscale(0%);
+          filter:grayscale(0%);
+
 }
 .picto p {
   font-size: .8rem
@@ -640,6 +659,12 @@ footer #download:hover {
   }
   #savoirs .down {
     display: none
+  }
+  .bloc-logo{
+    margin: auto;
+  }
+  #savoirs p{
+    display: none;
   }
   #blockquote {
     display: none
