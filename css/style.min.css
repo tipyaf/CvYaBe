@@ -54,6 +54,9 @@ h4 {
   font-weight: lighter;
   font-size: 1.5rem
 }
+p{
+  font-family: 'Open Sans', sans-serif;
+}
 .down {
   display: block!important;
   bottom: 0;
